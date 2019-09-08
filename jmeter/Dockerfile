@@ -41,7 +41,7 @@ COPY entrypoint.sh /opt/jmeter/
 
 WORKDIR /logs
 
-EXPOSE 1099 50000 51000 4445/udp
+EXPOSE 1099 50000 51000 4445 4445/udp
 
 # default command in the entrypoint is 'minion'
 ENTRYPOINT ["/opt/jmeter/entrypoint.sh"]
